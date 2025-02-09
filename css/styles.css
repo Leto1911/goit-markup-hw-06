@@ -321,7 +321,7 @@ button {
 }
 .overlay-container {
   position: absolute;
-  padding: 8px 16px;
+  padding: 72px 16px 24px 16px;
   width: 288px;
   min-height: 623px;
   top: 50%;
@@ -376,7 +376,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
+  margin-bottom: 16px;
 }
 .container-modal-list {
   margin-bottom: 8px;
@@ -442,6 +442,9 @@ button {
 }
 .container-checkbox {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .label-checkbox {
   font-weight: 400;
@@ -452,7 +455,8 @@ button {
 }
 
 .span-modal {
-  margin-right: 8px;
+  flex-shrink: 0;
+  margin-right: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -465,6 +469,7 @@ button {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
+
 .input-checkbox:checked + .label-checkbox > .span-modal {
   background-color: #404bbf;
   border: none;
@@ -472,9 +477,9 @@ button {
 }
 
 .modal-link {
+  margin-left: 24px;
   text-decoration: underline;
   color: #4d5ae5;
-  line-height: 1.33;
 }
 .button-modal {
   display: block;
@@ -502,7 +507,116 @@ button {
 }
 @media screen and (min-width: 768px) {
   .overlay-container {
+    padding: 72px 24px 24px 24px;
     width: 408px;
     min-height: 584px;
   }
+  .span-modal {
+    margin-right: 8px;
+  }
+  .modal-link {
+    margin-left: 0;
+  }
+}
+/* hero---------------------------------------------------------------- */
+.hero {
+}
+.hero-container {
+  max-width: 320px;
+  padding: 72px 0;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/darkhero.jpg);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2e2f42;
+}
+.text-title {
+  margin: 0 auto;
+  max-width: 216px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.hero-button {
+  margin: 72px auto;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  min-width: 169px;
+  height: 56px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding: 112px 0;
+  }
+  .text-title {
+    width: 496px;
+    font-size: 56px;
+  }
+  .hero-button {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .hero-button {
+    margin-top: 48px;
+  }
+}
+/* Feature------------------------------------------------------------- */
+.feature {
+  max-width: 320px;
+  padding: 96px;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.feature-list-item {
+  width: 100%;
+}
+.feature-icon-node {
+  display: none;
+}
+.feature-title {
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.feature-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
