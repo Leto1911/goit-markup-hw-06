@@ -48,8 +48,8 @@ button {
 
 /*common-------------------------------------------------------*/
 .container {
-  padding: 0 16px;
   max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -521,7 +521,7 @@ button {
 /* hero---------------------------------------------------------------- */
 .hero {
   padding: 72px 0;
-  margin: auto;
+  margin: 0 auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -529,14 +529,64 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/darkhero.jpg);
+    url(../images/heroimg1x.jpg);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-color: #2e2f42;
 }
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimg2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .hero {
+    padding: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimgtabletx1.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimgtabletx2.jpg);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px;
+    max-width: 1158px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herodesktopimage1x.jpg);
+  }
+}
+@media (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herodesktopimage2x.jpg);
+  }
+}
+
 .text-title {
   margin: 0 auto;
   max-width: 216px;
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -544,6 +594,12 @@ button {
   text-align: center;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .text-title {
+    max-width: 496px;
+  }
+}
+
 .hero-button {
   display: block;
   margin: 72px auto;
@@ -567,25 +623,25 @@ button {
 }
 
 .feature-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
 }
 .feature-list-item {
-  width: 100%;
-  min-width: 288px;
+  max-width: 100%;
 }
 .icon-container {
   display: none;
 }
 .feature-title {
+  text-align: center;
   margin-bottom: 8px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 .feature-text {
@@ -594,4 +650,66 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+@media (min-width: 768px) {
+  .feature-list {
+    gap: 72px 24px;
+  }
+  .feature-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .feature-title {
+    text-align: left;
+  }
+}
+@media (min-width: 1158px) {
+  .feature {
+    padding: 120px;
+  }
+  .feature-list {
+    display: flex;
+    gap: 24px;
+  }
+  .feature-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .feature-text {
+    font-weight: 400;
+  }
+}
+/* Team Section------------------------------------------------------ */
+.team-section {
+  padding: 96px;
+  background-color: #f4f4fd;
+}
+.team-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
