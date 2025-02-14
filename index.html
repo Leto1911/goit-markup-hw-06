@@ -172,14 +172,13 @@
     </section>
 
     <section class="team-section">
-      <div class="container">
+      <div class="container team-container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-image">
-            <picture>
-              <source srcset="./images/imgmark-x1.jpg 1x, ./images/imgmark-x2.jpg 2x" type="image/jpeg">
-              <img src="./images/imgmark-x1.jpg" alt="Foto Mark Guerrero" width="264" />
-            </picture>
+            <img srcset="./images/imgmark-x1.jpg 1x, ./images/imgmark-x2.jpg 2x" src="./images/imgmark-x1.jpg"
+              alt="Foto Mark Guerrero" width="264" />
+
 
             <div class="name-container">
               <h3 class="name-text">Mark Guerrero</h3>
@@ -226,10 +225,9 @@
             </div>
           </li>
           <li class="team-image">
-            <picture>
-              <source srcset="./images/imgford-x1.jpg 1x, ./images/imgford-x2.jpg 2x" type="image/jpeg"> <img
-                src="./images/imgford-x1.jpg" alt="Foto Tom Ford" width="264" />
-            </picture>
+            <img srcset="./images/imgford-x1.jpg 1x, ./images/imgford-x2.jpg 2x" src="./images/imgford-x1.jpg"
+              alt="Foto Tom Ford" width="264" />
+
 
             <div class="name-container">
               <h3 class="name-text">Tom Ford</h3>
@@ -278,10 +276,9 @@
 
           </li>
           <li class="team-image">
-            <picture>
-              <source srcset="./images/imgcamila-x1.jpg 1x, ./images/imgcamila-x2.jpg 2x" type="image/jpeg">
-              <img src="./images/imgcamila-x1.jpg" alt="Foto Camila Garcia" width="264" />
-            </picture>
+            <img srcset="./images/imgcamila-x1.jpg 1x, ./images/imgcamila-x2.jpg 2x" src="./images/imgcamila-x1.jpg"
+              alt="Foto Camila Garcia" width="264" />
+
 
             <div class="name-container">
               <h3 class="name-text">Camila Garcia</h3>
@@ -330,10 +327,9 @@
 
           </li>
           <li class="team-image">
-            <picture>
-              <source srcset="./images/imgdaniel-x1.jpg 1x, ./images/imgdaniel-x2.jpg 2x" type="image/jpeg">
-              <img src="./images/imgdaniel-x1.jpg" alt="Daniel Wilson" width="264" />
-            </picture>
+            <img srcset="./images/imgdaniel-x1.jpg 1x, ./images/imgdaniel-x2.jpg 2x" src="./images/imgdaniel-x1.jpg"
+              alt="Daniel Wilson" width="264" />
+
 
             <div class="name-container">
               <h3 class="name-text">Daniel Wilson</h3>
@@ -384,13 +380,22 @@
         </ul>
       </div>
     </section>
-    <section class="portfolio hidden">
+    <section class="portfolio">
       <div class="container">
         <h2 class="portfolio-page">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img4.jpg" alt="Bankig App" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-1-min.jpg 1x, ./images/portfolio/port-desk-1@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-1-min.jpg 1x, 
+                    ./images/portfolio/port-tab-1@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-1-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-1@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-1-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App ·
@@ -406,7 +411,16 @@
           </li>
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img5.jpg" alt="Cashless Payment" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-2-min.jpg 1x, ./images/portfolio/port-desk-2@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-2-min.jpg 1x, 
+                    ./images/portfolio/port-tab-2@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-2-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-2@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-2-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
 
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -422,7 +436,16 @@
           </li>
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img6.jpg" alt="Meditation App" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-3-min.jpg 1x, ./images/portfolio/port-desk-3@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-3-min.jpg 1x, 
+                    ./images/portfolio/port-tab-3@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-3-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-3@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-3-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit
@@ -437,7 +460,16 @@
           </li>
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img9.jpg" alt="Taxi" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-4-min.jpg 1x, ./images/portfolio/port-desk-4@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-4-min.jpg 1x, 
+                    ./images/portfolio/port-tab-4@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-4-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-4@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-4-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App ·
@@ -451,7 +483,16 @@
           </li>
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img7.jpg" alt="Screen" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-5-min.jpg 1x, ./images/portfolio/port-desk-5@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-5-min.jpg 1x, 
+                    ./images/portfolio/port-tab-5@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-5-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-5@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-5-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App ·
@@ -465,7 +506,16 @@
           </li>
           <li class="portfolio-item">
             <div class="container-over">
-              <img src="./images/img8.jpg" alt="Online" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/port-desk-6-min.jpg 1x, ./images/portfolio/port-desk-6@2x-min.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-tab-6-min.jpg 1x, 
+                    ./images/portfolio/port-tab-6@2x-min.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-mob-6-min.jpg 1x, 
+                                        ./images/portfolio/port-mob-6@2x-min.jpg 2x" />
+                <img src="./images/portfolio/port-desk-6-min.jpg" alt="Bankig App" width="360" />
+              </picture>
+
               <p class="portfolio-over">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App ·
@@ -481,8 +531,8 @@
       </div>
     </section>
   </main>
-  <footer class="footer hidden">
-    <div class="container-footer-family">
+  <footer class="footer">
+    <div class="container container-footer-family">
       <div class="container-footer">
 
         <a class="logo-footer" href="./index.html">Web<span class="span-footer">Studio</span></a>
@@ -491,7 +541,7 @@
           marketing & growth solutions.
         </p>
       </div>
-      <div class="container-footer-social hidden">
+      <div class="container-footer-social">
         <p class="footer-social-text">Social media</p>
 
         <ul class="footer-social-list">
