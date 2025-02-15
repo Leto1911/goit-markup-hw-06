@@ -48,19 +48,23 @@
         </svg>
       </button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open">
       <div class="container mobile-menu-container">
         <button class="menu-button" type="button">
           <svg class="icon-mobile-menu" width="8" height="8">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
-        <ul class="mobile-menu-list">
-          <li class="mobile-menu-item mobile-menu-studio">Studio</li>
-          <li class="mobile-menu-item">Portfolio</li>
-          <li class="mobile-menu-item">Contacts</li>
-        </ul>
-        <adress class="adress-mobile-menu">
+        <nav class="mob-menu-nav">
+
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item mobile-menu-studio"> <a href="#">Studio</a></li>
+            <li class="mobile-menu-item"><a href="#">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="adress-mobile-menu">
           <ul class="adress-list-menu">
             <li>
               <a class="link-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -69,7 +73,7 @@
               <a class="link-menu link-menu-number" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </adress>
+        </address>
         <ul class="menu-list-social">
           <li class="menu-item-social">
             <a class="link-mobile-menu" href="">
@@ -653,8 +657,9 @@
               </svg>
 
             </span>
-            <span class="text-checkbox"> I accept the terms and conditions of the </span><a class="modal-link"
-              href="#">Privacy Policy</a>
+            <span class="text-checkbox"> I accept the terms and conditions of the
+              <a class="modal-link" href="#">Privacy Policy</a>
+            </span>
           </label>
 
         </div>
