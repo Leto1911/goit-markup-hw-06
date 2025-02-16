@@ -225,6 +225,7 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+
 .menu-button {
   position: absolute;
   display: flex;
@@ -246,9 +247,11 @@ button {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+}
+.mobile-nav-link {
   color: #2e2f42;
 }
-.mobile-menu-studio {
+.mobile-studio-link {
   color: #404bbf;
 }
 .adress-list-menu {
